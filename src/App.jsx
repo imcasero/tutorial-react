@@ -2,9 +2,9 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
+import ContactListComponent from "./components/container/contact_list";
 // eslint-disable-next-line no-unused-vars
 import TaskListComponent from "./components/container/task_list";
-import ContactComponent from "./components/pure/contact";
 // eslint-disable-next-line no-unused-vars
 import Greeting from "./components/pure/greeting";
 // eslint-disable-next-line no-unused-vars
@@ -19,7 +19,7 @@ function App() {
         {/* <GreetingF name="Diego"></GreetingF> */}
         {/* Componente de listado de tareas */}
         {/* <TaskListComponent></TaskListComponent> */}
-        <ContactComponent></ContactComponent>
+        <ContactListComponent></ContactListComponent>
       </div>
     </>
   );
