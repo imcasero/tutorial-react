@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ButtonComponent = ({ isConnected, handleClick }) => {
-  const buttonContent = isConnected ? "Connected" : "Disconnected";
+  const buttonContent = isConnected ? "Disconnected" : "Connect";
 
   return <button onClick={handleClick}>{buttonContent}</button>;
 };
