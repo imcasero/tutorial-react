@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { Contact } from "../../models/contact.class";
 
-
 const ContactComponent = ({ contact }) => {
+  if (!contact) {
+    return <div>No contact available</div>;
+  }
   return (
     <div>
       <h2>Name: {contact.name}</h2>
