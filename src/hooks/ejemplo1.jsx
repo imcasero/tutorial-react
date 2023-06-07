@@ -1,6 +1,5 @@
 /**
  * Ejemplo de uso del Hook de useState
- * MINUTO TUTORIAL -50:20
  * Crear un componente de tipo función y acceder a su estado
  * privado a través de un hook, además de poder modificarlo.
  */
@@ -31,7 +30,7 @@ const Ejemplo1 = () => {
    * Función para actualizar el estado privado que contiene el contador.
    */
   function incrementCont() {
-    // funcionParaCambiar(nuevoValor)
+    //? funcionParaCambiar(nuevoValor)
     setCont(cont + 1);
   }
 
@@ -43,10 +42,22 @@ const Ejemplo1 = () => {
   }
 
   // Llamada a las funciones
-  incrementCont();
-  updatePerson();
+  // incrementCont();
+  // updatePerson();
 
-  return <div></div>;
+  return (
+    <div>
+      <h1>first hook , with useState()</h1>
+      <h2>Cont : {cont}</h2>
+      <h2>Person data :</h2>
+      <h3>Name : {person.name}</h3>
+      <h3>email : {person.email}</h3>
+      {/* Bloque de botones para actualizar el estado */}
+      <button onClick={incrementCont}>Increment Cont</button>
+      <br></br>
+      <button onClick={updatePerson}>Update Person</button>
+    </div>
+  );
 };
 
 export default Ejemplo1;
